@@ -1,0 +1,10 @@
+TEAM
+Taran Agarwal
+Patrick Li
+Iason Mihalopoulos
+
+DESIGN
+The design is based on a set of interconnected classes. The chess pieces Pawn, Bishop, Knight, Rook, Queen, King, and Mystery have classes of their own. Each piece has a legal move shape function and the pawn has a legal capture shape function as well. The individual piece classes are derived from the Piece base class from which they inherit and override most of their functions. The Board class contains functions for making and altering the board such as a copy constructor, add_piece and remove_piece as well as an overloaded << operator to print out the board. Finally, the Game class contains most of the functionality of the chess game. The Game() constructor sets up the start of the chess game by adding all of the pieces in their appropriate positions. Game also contains integral functions such as make_move, in_mate, in_checkmate, in_stalemate, and point_value. We used the simple point value system: pawn (1), knight (3), bishop (3), rook (5) and queen (9). Each player starts the game with maximum possible 39 points and loses the corresponding points whenever a piece of their own is captured.
+
+COMPLETENESS
+Our program should work without any errors and missing/incorrect functionality to our knowledge and basis of testing.
